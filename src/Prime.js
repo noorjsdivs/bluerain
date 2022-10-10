@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "./components/Header";
+import Banner from "./components/banner/Banner";
+import Header from "./components/header/Header";
+import Whoweare from "./components/whoweare/Whoweare";
 
 const Prime = () => {
   return (
     <div>
       <Header />
+      <Banner />
+      <Whoweare />
     </div>
   );
 };

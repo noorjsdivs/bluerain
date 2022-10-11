@@ -8,7 +8,11 @@ const Header = () => {
     <div className="w-full h-auto shadow-lg py-3 sticky top-0 z-50 bg-white px-2">
       <div className="flex justify-between max-w-screen-xl mx-auto">
         <div>
-          <img className="w-44" src={headerLogoImg} alt="headerLogoImg" />
+          <img
+            className="w-60 object-contain hover:shadow-2xl rounded-xl duration-300 cursor-pointer"
+            src={headerLogoImg}
+            alt="headerLogoImg"
+          />
         </div>
         <div className="hidden lg:flex items-center gap-4">
           {headerData.map((item) => (

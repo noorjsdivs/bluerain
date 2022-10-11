@@ -16,6 +16,13 @@ module.exports = {
         bodyFont: ["Poppins", "sans-serif"],
         titleFont: ["Roboto", "sans-serif"],
       },
+      colors: {
+        colorOne: "#2f3e46",
+        colorTwo: "#2f3e46",
+        colorThree: "#354f52",
+        colorFour: "#52796f",
+        colorFive: "#84a98c",
+      },
       backgroundImage: {
         bgmap: "url('/public/map.webp')",
       },

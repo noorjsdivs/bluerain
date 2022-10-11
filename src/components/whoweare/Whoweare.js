@@ -5,8 +5,8 @@ import ReadmoreBtn from "../buttons/ReadmoreBtn";
 const Whoweare = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-20">
-      <div className=" h-[500px] max-w-screen-lg mx-auto bg-bgmap bg-center flex justify-between gap-20 items-center">
-        <div className="w-1/2 flex flex-col gap-4 font-bodyFont">
+      <div className="h-full lg:h-[500px] max-w-screen-lg mx-auto bg-bgmap bg-center flex flex-col lgl:flex-row justify-between gap-20 items-center">
+        <div className="w-full lgl:w-1/2 flex flex-col gap-4 font-bodyFont">
           <motion.h2
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -51,7 +51,7 @@ const Whoweare = () => {
             <ReadmoreBtn />
           </motion.div>
         </div>
-        <div className="w-1/2 relative h-full">
+        <div className="w-full lgl:w-1/2 relative flex flex-col gap-4 md:flex-row justify-center items-center h-full">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

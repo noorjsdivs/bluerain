@@ -6,12 +6,12 @@
 
 @layer components {
   .smallCard1 {
-    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center absolute top-14 left-0;
+    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center lgl:absolute top-14 left-0;
   }
   .smallCard2 {
-    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center absolute top-6 right-14;
+    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center lgl:absolute top-6 right-14;
   }
   .smallCard3 {
-    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center absolute bottom-10 right-32;
+    @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center lgl:absolute bottom-10 right-32;
   }
 }

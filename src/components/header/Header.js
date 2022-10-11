@@ -4,7 +4,7 @@ import { headerData } from "../../constants";
 
 const Header = () => {
   return (
-    <div className="w-full h-auto shadow-lg py-3 z-50">
+    <div className="w-full h-auto shadow-lg py-3 sticky top-0 z-50 bg-white">
       <div className="flex justify-between max-w-screen-xl mx-auto">
         <div>
           <img className="w-44" src={headerLogoImg} alt="headerLogoImg" />

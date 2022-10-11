@@ -53,11 +53,12 @@ const Whoweare = () => {
         </div>
         <div className="w-1/2 relative h-full">
           <motion.div
-            initial={{ x: -200, y: -200, opacity: 0.9 }}
-            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              x: { type: "spring", stiffness: 80 },
-              y: { type: "spring", stiffness: 80 },
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
               ease: "easeIn",
               duration: 1,
             }}
@@ -71,11 +72,12 @@ const Whoweare = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ x: 200, y: -200, opacity: 0.9 }}
-            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              x: { type: "spring", stiffness: 80 },
-              y: { type: "spring", stiffness: 80 },
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
               ease: "easeIn",
               duration: 1,
             }}
@@ -90,11 +92,12 @@ const Whoweare = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ x: 0, y: 200, opacity: 0.9 }}
-            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{
-              x: { type: "spring", stiffness: 80 },
-              y: { type: "spring", stiffness: 80 },
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
               ease: "easeIn",
               duration: 1,
             }}

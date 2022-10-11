@@ -5,10 +5,12 @@ import Whoweare from "./components/whoweare/Whoweare";
 
 const Prime = () => {
   return (
-    <div>
+    <div className="w-full">
       <Header />
-      <Banner />
-      <Whoweare />
+      <div className="px-4">
+        <Banner />
+        <Whoweare />
+      </div>
     </div>
   );
 };

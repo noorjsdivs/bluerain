@@ -14,8 +14,8 @@ import {
 const Banner = () => {
   return (
     <div>
-      <div className="max-w-screen-xl h-auto mx-auto px-6 mt-2 flex justify-between items-center">
-        <div className="w-1/2">
+      <div className="max-w-screen-xl h-auto mx-auto px-6 mt-2 flex flex-col mdl:flex-row justify-between items-center">
+        <div className="w-full md:w-1/2">
           <motion.img
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -32,7 +32,7 @@ const Banner = () => {
             alt="primeBannerImg"
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full mdl:w-1/2">
           <motion.h1
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -44,10 +44,10 @@ const Banner = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 font-titleFont"
+            className="font-extrabold text-transparent text-2xl mdl:text-3xl lg:text-5xl mt-2 lg:mt-0 text-center mdl:text-left bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 font-titleFont"
           >
-            Lorem, ipsum dolor. <br /> Lorem ipsum dolor sit amet. <br /> Lorem
-            ipsum dolor sit amet!
+            Lorem, ipsum dolor. Lorem ipsum dolor sit amet. Lorem ipsum dolor
+            sit amet!
           </motion.h1>
           <motion.p
             initial={{ x: 100, opacity: 0 }}
@@ -59,7 +59,7 @@ const Banner = () => {
               opacity: { duration: 0.6 },
               ease: "easeIn",
             }}
-            className="font-bodyFont text-[16px] mt-3"
+            className="font-bodyFont text-[16px] mdl:text-[14px] mt-3 text-center mdl:text-left"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             <br />
@@ -75,7 +75,7 @@ const Banner = () => {
               opacity: { duration: 0.6 },
               ease: "easeIn",
             }}
-            className="mt-4"
+            className="mt-4 flex justify-center mdl:justify-start"
           >
             <CallbackBtn />
           </motion.div>
@@ -89,16 +89,22 @@ const Banner = () => {
               opacity: { duration: 0.6 },
               ease: "easeIn",
             }}
-            className="flex justify-start items-center gap-4 mt-4"
+            className="flex flex-col lg:flex-row justify-center w-full mdl:justify-start items-center gap-4 mt-4"
           >
-            <div>
-              <BsTelephone className="text-[#f5066c]" size={50} />
+            <div className="w-full lg:flex gap-4">
+              <div className="w-full mdl:w-auto flex items-center justify-center mdl:justify-start">
+                <BsTelephone className="text-[#f5066c] text-[30px] lg:text-[50px]" />
+              </div>
+              <div className="font-bodyFont w-full flex flex-col items-center">
+                <p className="text-xl font-semibold w-auto mdl:w-full">
+                  (+968) 97859628
+                </p>
+                <p className="text-lg text-gray-500 w-auto mdl:w-full">
+                  Call for enquiry
+                </p>
+              </div>
             </div>
-            <div className="font-bodyFont flex flex-col">
-              <p className="text-xl font-semibold">(+968) 97859628</p>
-              <p className="text-lg text-gray-500">Call for enquiry</p>
-            </div>
-            <div className="flex gap-1">
+            <div className="flex w-full justify-center  mdl:justify-start gap-1 mdl:-mt-3 lg:-mt-0">
               <FaFacebookSquare
                 size={30}
                 className="fill-gray-700 hover:fill-[#4267B2] cursor-pointer transform ease-in-out duration-300"

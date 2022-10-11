@@ -52,15 +52,35 @@ const Whoweare = () => {
           </motion.div>
         </div>
         <div className="w-1/2 relative h-full">
-          <div className="smallCard1">
+          <motion.div
+            initial={{ x: -200, y: -200, opacity: 0.9 }}
+            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            transition={{
+              x: { type: "spring", stiffness: 80 },
+              y: { type: "spring", stiffness: 80 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="smallCard1"
+          >
             <p className="font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 leading-8 mb-2">
               14+ <br />
             </p>
             <p className="font-bodyFont text-transparent text-xl font-medium uppercase bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 leading-6">
               years of <br /> experience
             </p>
-          </div>
-          <div className="smallCard2">
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, y: -200, opacity: 0.9 }}
+            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            transition={{
+              x: { type: "spring", stiffness: 80 },
+              y: { type: "spring", stiffness: 80 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="smallCard2"
+          >
             <p className="font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 leading-8 mb-2">
               550+ <br />
             </p>
@@ -68,8 +88,18 @@ const Whoweare = () => {
               successful
               <br /> projects
             </p>
-          </div>
-          <div className="smallCard3">
+          </motion.div>
+          <motion.div
+            initial={{ x: 0, y: 200, opacity: 0.9 }}
+            whileInView={{ x: 0, y: 0, opacity: 1 }}
+            transition={{
+              x: { type: "spring", stiffness: 80 },
+              y: { type: "spring", stiffness: 80 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="smallCard3"
+          >
             <p className="font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-pink-600 via-pink-700 to-indigo-600 leading-8 mb-2">
               450+ <br />
             </p>
@@ -77,7 +107,7 @@ const Whoweare = () => {
               happy
               <br /> clients
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

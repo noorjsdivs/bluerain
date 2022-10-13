@@ -9,7 +9,7 @@ import Whoweare from "./components/whoweare/Whoweare";
 
 const Prime = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mx-auto">
       <Header />
       <div className="px-4">
         <Banner />

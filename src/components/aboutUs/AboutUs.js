@@ -5,8 +5,8 @@ import ReadmoreBtn from "../buttons/ReadmoreBtn";
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex gap-14 mb-20">
-      <div className="w-1/2">
+    <div className="w-full flex flex-col lg:flex-row gap-14 mb-20">
+      <div className="w-full lg:w-1/2 px-6 lg:px-0">
         <motion.img
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -17,13 +17,13 @@ const AboutUs = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          className="w-full h-[500px] object-cover rounded-r-3xl"
+          className="w-full h-[400px] lg:h-[500px] object-cover rounded-md lg:rounded-none lg:rounded-r-3xl"
           src={primeFactsImg}
           alt="primeFactsImg"
         />
       </div>
-      <div className="w-1/2 flex items-center">
-        <div className="w-2/3 flex font-bodyFont flex-col gap-4 justify-start">
+      <div className="w-full lg:w-1/2 px-6 lg:px-0 flex items-center">
+        <div className="w-full lg:w-2/3 flex font-bodyFont flex-col gap-4 justify-start">
           <motion.h3
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ const AboutUs = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-3xl font-extrabold text-[#434343]"
+            className="text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-extrabold text-[#434343]"
           >
             Some Facts About Us
           </motion.h3>

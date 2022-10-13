@@ -19,8 +19,8 @@ const Whatwedo = () => {
       >
         Who We Do
       </motion.h2>
-      <div className="max-w-screen-xl mx-auto flex gap-10 py-16">
-        <motion.div className="flex flex-col gap-3 px-6 py-8 hover:shadow-2xl cursor-pointer hover:scale-110 transition ease-in-out duration-500 rounded-xl">
+      <div className="max-w-screen-xl mx-auto flex flex-col xl:flex-row gap-10 px-2 xl:px-0 py-16">
+        <motion.div className="flex flex-col gap-3 px-10 xl:px-6 py-8 hover:shadow-2xl cursor-pointer hover:scale-105 xl:hover:scale-110 transition ease-in-out duration-500 rounded-xl">
           <motion.p
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}

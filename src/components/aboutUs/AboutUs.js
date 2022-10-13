@@ -5,7 +5,7 @@ import ReadmoreBtn from "../buttons/ReadmoreBtn";
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex gap-14">
+    <div className="w-full flex gap-14 mb-20">
       <div className="w-1/2">
         <motion.img
           initial={{ x: -100, opacity: 0 }}

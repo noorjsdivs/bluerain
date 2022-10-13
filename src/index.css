@@ -14,4 +14,12 @@
   .smallCard3 {
     @apply bg-white w-44 h-48 drop-shadow-3xl rounded-2xl flex font-bodyFont flex-col gap-1 justify-center items-center text-center lgl:absolute bottom-10 right-32;
   }
+  /* ================ Footer start here ============== */
+  .footerli {
+    @apply w-full flex relative bg-[#F6F6F6] justify-start items-center gap-1 hover:pl-7 cursor-pointer duration-500;
+  }
+  .footerlispan {
+    @apply absolute h-[1px] duration-500 left-0 z-0 bg-[#434343] mt-1;
+  }
+  /* ================ Footer end here ============== */
 }
